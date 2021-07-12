@@ -87,6 +87,12 @@ const starts = [
   }
 ]
 
+const sponsors = [
+  {
+    imageUrl: `/docs/img/sponsors/stream-logo.png`
+  }
+]
+
 const features = [
   {
     title: 'Declare',
@@ -151,6 +157,15 @@ function Feature({imageUrl, title, description}) {
       )}
       <h3> {title} <img className={styles.featureImage} src={imgUrl} alt={title} /></h3>
       <p>{description}</p>
+    </div>
+  );
+}
+
+function Sponsor({imageUrl}) {
+  const imgUrl = useBaseUrl(imageUrl);
+  return (
+    <div className={clsx('col col--6', styles.feature)}>
+      
     </div>
   );
 }
@@ -240,6 +255,16 @@ function Home() {
             </div>
           </section>
         )}
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <section className={styles.announcement}>
+        <h2> Special Thanks to our Sponsors ❤️ - <a href="https://opencollective.com/koin#sponsors">Open Collective</a></h2>
+            <div className="container">
+                <a href="https://getstream.io/chat/sdk/android/?utm_source=koin&utm_medium=sponsorship&utm_content=developer"><img className={styles.indexCtasGitHubButton} src="/img/sponsors/stream-logo.png" width="210"/></a>
+            </div>
+        </section>   
         <br/>
     </Layout>
   );

@@ -47,6 +47,11 @@ module.exports = {
         },
         {href: 'https://medium.com/koin-developers', label: 'Blog', position: 'left'},
         {
+          href: 'https://opencollective.com/koin#sponsors',
+          label: 'Sponsors',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/InsertKoinIO/koin',
           label: 'GitHub',
           position: 'right',
